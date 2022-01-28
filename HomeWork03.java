@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 public class HomeWork03 {
     public static void main(String[] args) {
-        final String CORRECT_ANSWER_TEXT = "Верно";
-        final String NOT_CORRECT_ANSWER_TEXT = "Неверно";
-
         final int QUESTIONS_INDEX = 0;
         final int ANSWERS_INDEX = 1;
         final int CORRECT_ANSWER_INDEX = 2;
