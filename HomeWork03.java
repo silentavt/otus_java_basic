@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 public class HomeWork03 {
+    private static final int QUESTIONS_INDEX = 0;
+    private static final int ANSWERS_INDEX = 1;
+    private static final int CORRECT_ANSWER_INDEX = 2;
+
     public static void main(String[] args) {
-        final int QUESTIONS_INDEX = 0;
-        final int ANSWERS_INDEX = 1;
-        final int CORRECT_ANSWER_INDEX = 2;
 
         String[][][] testSourceData = {
                 {
@@ -26,11 +27,10 @@ public class HomeWork03 {
 
         int correctAnswersCount = 0;
         int incorrectAnswersCount = 0;
+        Scanner scanner = new Scanner(System.in);
+        String selectedAnswer;
 
         for (String[][] currentDataSet : testSourceData) {
-            Scanner scanner = new Scanner(System.in);
-            String selectedAnswer;
-
             for (String question : currentDataSet[QUESTIONS_INDEX]) {
                 System.out.println(question);
             }
