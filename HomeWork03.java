@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class HomeWork03 {
-    private static final int QUESTIONS_INDEX = 0;
+    private static final int QUESTION_INDEX = 0;
     private static final int ANSWERS_INDEX = 1;
     private static final int CORRECT_ANSWER_INDEX = 2;
-    private static final String[][][] testSourceData = {
+    private static final String[][][] testDataSets = {
             {
                     {"Сколько будет 2 * 2?"},
                     {"2", "22", "4", "44"},
@@ -28,8 +28,8 @@ public class HomeWork03 {
         Scanner scanner = new Scanner(System.in);
         String selectedAnswer;
 
-        for (String[][] currentDataSet : testSourceData) {
-            System.out.println(currentDataSet[QUESTIONS_INDEX][0]);
+        for (String[][] currentDataSet : testDataSets) {
+            System.out.println(currentDataSet[QUESTION_INDEX][0]);
 
             for (int i = 0; i < currentDataSet[ANSWERS_INDEX].length; i++) {
                 System.out.println((i + 1) + ". " + currentDataSet[ANSWERS_INDEX][i]);
