@@ -4,27 +4,25 @@ public class HomeWork03 {
     private static final int QUESTIONS_INDEX = 0;
     private static final int ANSWERS_INDEX = 1;
     private static final int CORRECT_ANSWER_INDEX = 2;
-
-    public static void main(String[] args) {
-
-        String[][][] testSourceData = {
-                {
+    private static final String[][][] testSourceData = {
+            {
                     {"Сколько будет 2 * 2?"},
                     {"2", "22", "4", "44"},
                     {"3"}
-                },
-                {
+            },
+            {
                     {"Какая температура таяния льда?"},
                     {"10 C", "0 C", "567 C", "4 C", "-1 C"},
                     {"2"}
-                },
-                {
+            },
+            {
                     {"Есть ли жизнь на Марсе?"},
                     {"Да", "Нет", "Науке это неизвестно"},
                     {"3"}
-                }
-        };
+            }
+    };
 
+    public static void main(String[] args) {
         int correctAnswersCount = 0;
         int incorrectAnswersCount = 0;
         Scanner scanner = new Scanner(System.in);
