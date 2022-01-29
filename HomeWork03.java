@@ -29,9 +29,7 @@ public class HomeWork03 {
         String selectedAnswer;
 
         for (String[][] currentDataSet : testSourceData) {
-            for (String question : currentDataSet[QUESTIONS_INDEX]) {
-                System.out.println(question);
-            }
+            System.out.println(currentDataSet[QUESTIONS_INDEX][0]);
 
             for (int i = 0; i < currentDataSet[ANSWERS_INDEX].length; i++) {
                 System.out.println((i + 1) + ". " + currentDataSet[ANSWERS_INDEX][i]);
